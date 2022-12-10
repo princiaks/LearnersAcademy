@@ -88,7 +88,7 @@ if(request.getAttribute("forEdit") !=null){
                                                 <label class="col-lg-4 col-form-label" for="val-select2">Designation<span class="text-danger">*</span></label>
                                                 <div class="col-lg-8">
                                                     <select class="form-control" id="val-select2" name="designation" style="width: 100%;" required data-placeholder="Choose one..">
-                                                        <option value="">Choose Class</option>
+                                                        <option value="">Choose Designation</option>
                                                         <%ArrayList<Designation> desig=(ArrayList<Designation>)request.getAttribute("listDesignation");
 										        		for(Designation c:desig){
 										        			if(c.getId()== Integer.parseInt(designation)){
@@ -109,7 +109,7 @@ if(request.getAttribute("forEdit") !=null){
                                                 <label class="col-lg-4 col-form-label" for="val-select2">Subject<span class="text-danger">*</span></label>
                                                 <div class="col-lg-8">
                                                     <select class="form-control" id="val-select2" name="subject" style="width: 100%;" required data-placeholder="Choose one..">
-                                                        <option value="">Choose Class</option>
+                                                        <option value="">Choose Subject</option>
                                                         <%ArrayList<Subject> sub=(ArrayList<Subject>)request.getAttribute("listSubject");
 										        		for(Subject c:sub){if(c.getId()== Integer.parseInt(subject)){
 										        				%>
